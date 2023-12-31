@@ -1,84 +1,225 @@
-.lebarweb{
-    width: 1512px;
-    height: 982px;
-    background: #FFF;
+.lebarweb {
+  background: #ffe259; 
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  
+  background: linear-gradient(to right, #ffa751, #ffe259); 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
- 
-.topnav{
-    width: 1512px;
-    height: 83px;
-    flex-shrink: 0;
-    border: 4px solid #000;
-    background: #648813;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
+
+.navbar {
+  border: 4px solid #000;
+  background: #006838;
+  flex-shrink: 0;
+  border: 4px solid #000;
+  background: #006838;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 2;
 }
-.home{             
-    color: #FFF;
-    font-family: Super Snack;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
 }
-.offers{
-    color: #FFF;
-    font-family: Super Snack;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
+
+.navbar li {
+  display: inline;
+  text-align: center;
+  padding: 20px 30px;
+  display: inline-block;
 }
-.lucu{
-    top: 50%;
-    width: 151px;
-    height: 57px;
-    flex-shrink: 0;
+
+.navbar li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.home {
+  color: #fff;
+  font-family: Super Snack;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.home:hover{
+  color : #a59910;
+}
+
+.offers {
+  color: #fff;
+  font-family: Super Snack;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+.offers:hover{
+  color: #a59910;
+}
+
+.place {
+  color: #fff;
+  font-family: Super Snack;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.place:hover{
+  color: #a59910;
+}
+.about {
+  color: #fff;
+  font-family: Super Snack;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.about:hover{
+  color: #a59910;
+}
+
+.lunch {
+  width: 151px;
+  height: 73px;
+  margin: auto;
+}
+
+.container{
+  width: 600px;
+}
+
+.segawon {
+  display: flex;
+  height: auto;
+  float: left;
+  margin:50px;
+  padding-top: 100px;
+}
+
+.text1 {
+  width: 340px;
+  text-align: left;
+  font-family: Super Snack;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 400px;
+  color: #006838;
+}
+
+.text2 {
+  width: 340px;
+  text-align: left;
+  font-family: Super Snack;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 400px;
+  color: #006838;
+
+}
+
+.menu {
+  text-decoration: none;
+  font-family: Super Snack;
+  font-size: 40px; 
+  color: #ffea00;
+  margin-left: 235px;
+  background: #006838;
+  padding: 5px 50px;
+  border: #3b2d2d 3px solid;
+  border-radius: 30px;
+}
+
+.textorder {
+  top: 20px;
+  font-family: Super Snack;
+  font-weight: 400;
+  margin-left: 240px;
+  color: #006838;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  
+}
+
+/* Gambar Responsif 😱💯*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query 🥶🥶💯💯 */
+@media screen and (max-width: 768px) {
+.navbar ul {
+    float: none;
     text-align: center;
-    margin: auto;
-}
+  }
 
-.place{
-    color: #FFF;
-    font-family: Super Snack;
+.navbar li {
+    display: block;
+    padding: 10px 20px;
+  }
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+.segawon {
+    margin: 20px;
+    padding-top: 50px;
+  }
+
+.text1, .text2 {
+    width: auto;
+    margin-top: 200px;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-}
+  }
 
-.about{
-    color: #FFF;
-    font-family: Super Snack;
+.menu {
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 25px;
+  }
+
+.textorder {
+    margin-left: 20px;
+    font-size: 20px;
+  }
 }
 
-.lunch{
-    width: 50%;
-    position: absolute;
-    top:350px;
-    left:400px;
-    position: fixed;
+@media screen and (max-width: 480px) {
+.navbar li {
+    padding: 10px 15px;
+  }
+
+.text1, .text2 {
+    font-size: 25px;
+  }
+
+.menu {
+    font-size: 25px;
+    padding: 5px 20px;
+  }
+
+.textorder {
+    font-size: 18px;
+  }
 }
-
-.rawon{
-    width: 50%;
-    position: absolute;
-    top: 450px;
-    left: 550px;
-    position: fixed;
-}
-
-
-
-
-

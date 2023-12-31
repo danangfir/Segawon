@@ -1,18 +1,50 @@
-.body{
-    width: 1512px;
-height: 83px;
-flex-shrink: 0;
+.lebarweb {
+    flex-direction: column;
+    display: flex;
+    background: #ffe259;  
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+    background: linear-gradient(to right, #ffa751, #ffe259); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
 }
 
-.topnav{
-    width: 1512px;
-    height: 83px;
+.navbar {
+    z-index: 1000;
+    border: 4px solid #000;
+    background: #006838;
     flex-shrink: 0;
     border: 4px solid #000;
-    background: #648813;
+    background: #006838;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
 }
-.home{
-    color: #FFF;
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    text-align: center;
+    padding: 20px 30px;
+    display: inline-block;
+}
+
+.navbar li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.home {
+    color: #fff;
     font-family: Super Snack;
     font-size: 30px;
     font-style: normal;
@@ -20,23 +52,28 @@ flex-shrink: 0;
     line-height: normal;
     text-decoration: none;
 }
-.offers{
-    color: #FFF;
+
+.home:hover{
+    color : #a59910;
+}
+
+.offers {
+    color: #fff;
     font-family: Super Snack;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    text-align: center;
 }
-.lucu{
-    width: 151px;
-    height: 57px;
-    flex-shrink: 0;
+
+.offers:hover{
+    color: #a59910;
 }
 
 .place{
-    color: #FFF;
+    color: #fff;
     font-family: Super Snack;
     font-size: 30px;
     font-style: normal;
@@ -45,8 +82,12 @@ flex-shrink: 0;
     text-decoration: none;
 }
 
-.about{
-    color: #FFF;
+.place:hover{
+    color: #a59910;
+}
+
+.about {
+    color: #fff;
     font-family: Super Snack;
     font-size: 30px;
     font-style: normal;
@@ -55,8 +96,204 @@ flex-shrink: 0;
     text-decoration: none;
 }
 
+.about:hover{
+    color: #a59910;
+}
+
+/* Membuat Teks atas Bawah🥵 🗣️🗣️ */
+
+.teks-atas {
+    text-align: center; 
+    margin-bottom: 10px; 
+    margin-top: 270px;
+}
+
+.teks-atas h2 {
+    font-size: 40px; 
+    color: #333; 
+    font-family: super snack;
+}
+
+.teks-atas img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    border: #fff solid 3px;
+}
+
+/* Membuat PELEX BOXKS Menu 😭🥴*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 1000px;
+    max-height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+/* Item😣 */
+
+.container > .item{
+    z-index: 1;
+    flex: 1 1 200px; 
+    max-width: 200px; 
+    border: 4px solid black;
+    padding: 20px;
+    margin: 13px;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Image 😎 */
+
+.container > .item > img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    text-align: center;
+}
+
+/* font🤩 */
+
+.container > .item > p {
+    font-family: Super snack;
+    margin: 5px 0;
+    font-size: 16px; 
+    color: #333; 
+}
+
+/* hover 🥶 */
+
+.container > .item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Felexboks Kedua😩😩 */
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 1000px;
+    max-height: 350px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Item😣 */
+
+.container2 > .item2{
+    flex: 1 1 200px; 
+    max-width: 200px; 
+    border: 4px solid black;
+    padding: 20px;
+    margin: 13px;
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+/* Image 😎 */
+
+.container2 > .item2 > img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+}
+
+/* font🤩 */
+
+.container2 > .item2 > p {
+    font-family: Super snack;
+    margin: 5px 0;
+    font-size: 16px; 
+    color: #333; 
+}
+
+/* hover 🥶 */
+
+.container2 > .item2:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
 
 
 
+/* Agar Responsif🥺 */
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch; 
+    }
+
+    .container > .item {
+        width: auto; 
+        max-width: none; 
+    }
+}
 
 
+/* Gambar Responsif 🫵💯👍 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries 👑👑👑 */
+@media screen and (max-width: 768px) {
+.navbar ul {
+    float: none;
+    text-align: center;
+    }
+
+.navbar li {
+    display: block;
+    padding: 10px 20px;
+    }
+
+.container, .container2 {
+    width: auto;
+    padding: 0 10px;
+    }
+
+.container > .item, .container2 > .item2 {
+    flex: 1 1 auto;
+    max-width: none;
+    }
+
+.teks-atas h2 {
+    font-size: 30px;
+    }
+
+.teks-atas img {
+    width: 80px;
+    height: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+.navbar li {
+    padding: 10px 15px;
+    }
+
+.teks-atas h2 {
+    font-size: 25px;
+    }
+
+.teks-atas img {
+    width: 60px;
+    height: 60px;
+    }
+}
