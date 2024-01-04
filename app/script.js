@@ -23,7 +23,7 @@ window.onload = function() {
         autoChange = setInterval(changeSlide, delay);
     };
 
-    // Controls
+    // Controls 😩
     document.querySelector(".next-slide").addEventListener("click", function() {
         changeSlide();
         restart();
